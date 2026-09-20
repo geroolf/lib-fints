@@ -2,3 +2,10 @@
 /node_modules
 .DS_Store
 .env
+/ing-*.json
+/commerzbank-*.json
+/commerzbank-statements/
+._*
+examples/**/*.json
+scripts/**/*.json
+.env*
