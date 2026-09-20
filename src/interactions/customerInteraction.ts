@@ -37,6 +37,8 @@ export interface ClientResponse {
 
 export interface StatementResponse extends ClientResponse {
 	statements: Statement[];
+	/** Original booked MT940 stream before parsing, when MT940 was used. */
+	rawMT940Data?: string;
 }
 
 export abstract class CustomerInteraction {

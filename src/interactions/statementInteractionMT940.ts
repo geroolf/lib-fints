@@ -48,6 +48,7 @@ export class StatementInteractionMT940 extends CustomerOrderInteraction {
 			.map((segment) => segment.bookedTransactions)
 			.filter((booked) => !!booked)
 			.join('');
+		clientResponse.rawMT940Data = bookedTransactions || undefined;
 
 		if (bookedTransactions) {
 			try {
